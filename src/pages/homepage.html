@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/homepage.css">
+    <!-- Referências da rolagens do setor 3 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <title>Home Page</title>
 </head>
 
@@ -21,7 +24,7 @@
             </div>
             <div class="logo">
                 <a href="">
-                    <img src="../../public/img-logo.svg" alt="Logo name">
+                    <img id="minhaLogo" src="../../public/img-logo.svg" alt="Logo name">
                 </a>
             </div>
             <div class="rightMenu">
@@ -54,11 +57,11 @@
         <section class="brand-logo">
             <div class="container">
                 <div class="brand-logo-inner">
-                    <div class="itemBrand"><img src="../images/logo-facebook.png" alt="img1"></div>
-                    <div class="itemBrand"><img src="../images/logo-instagram.png" alt="img2"></div>
-                    <div class="itemBrand"><img src="../images/logo-linkedin.png" alt="img3"></div>
-                    <div class="itemBrand"><img src="../images/logo-twitter.png" alt="img4"></div>
-                    <div class="itemBrand"><img src="../images/logo-github.png" alt="img6"></div>
+                    <div><img class="fotoBrand" src="../images/logo-facebook.png" alt="img1"></div>
+                    <div><img class="fotoBrand" src="../images/logo-instagram.png" alt="img2"></div>
+                    <div><img class="fotoBrand" src="../images/logo-linkedin.png" alt="img3"></div>
+                    <div><img class="fotoBrand" src="../images/logo-twitter.png" alt="img4"></div>
+                    <div><img class="fotoBrand" src="../images/logo-github.png" alt="img6"></div>
                 </div>
             </div>
         </section>
@@ -68,31 +71,103 @@
                 <div class="sec1-inner">
                     <div class="text text-left">
                         <h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolores commodi quis corrupti blanditiis doloribus!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolores commodi quis corrupti
+                            blanditiis doloribus!
                         </h3>
                     </div>
                     <div class="text text-rigth">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae in aspernatur natus, autem est deserunt ea ipsum possimus, soluta fuga veniam molestias quaerat minima doloremque necessitatibus laudantium repudiandae maiores? Beatae a veniam excepturi eum accusamus!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae in aspernatur natus, autem
+                            est deserunt ea ipsum possimus, soluta fuga veniam molestias quaerat minima doloremque
+                            necessitatibus laudantium repudiandae maiores? Beatae a veniam excepturi eum accusamus!
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section class="sec2 letf-right-sec">
+            <div class="container">
+                <div class="sec2-inner">
+                    <div class="img">
+                        <div class="img">
+                            <img class="logoProjeto" src="../images/foto-ducktur.png" alt="Foto projeto.">
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h3>Nome do Projeto</h3>
+                        <div class="text-inner">
+                            <p>
+                                Breve descrição do projeto ...
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptate beatae sint
+                                quisquam blanditiis in quibusdam molestias accusantium rerum, debitis unde nisi modi
+                                sunt quasi quos? Maiores culpa eaque magni.
+                            </p>
+                            <a href="#" class="btn">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="sec2 letf-right-sec">
+            <div class="container">
+                <div class="sec2-inner">
+                    <div class="text">
+                        <h3>Nome do Projeto</h3>
+                        <div class="text-inner">
+                            <p>
+                                Breve descrição do projeto ...
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptate beatae sint
+                                quisquam blanditiis in quibusdam molestias accusantium rerum, debitis unde nisi modi
+                                sunt quasi quos? Maiores culpa eaque magni.
+                            </p>
+                            <a href="#" class="btn">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img">
+                            <img class="logoProjeto" src="../images/foto-test.png" alt="Foto projeto.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-
-        <p>
-            FOOTER
-        </p>
-
+        <section class="sec3">
+            <div class="container">
+                <div class="sec3-inner">
+                    <h3>Descrição do que vai ser apresentado.</h3>
+                    <div class="sec3-slider">
+                        <div class="item">
+                            <img class="imgSlider" src="../images/foto-test.png" alt="slide1">
+                        </div>
+                        <div class="item">
+                            <img class="imgSlider" src="../images/foto-ducktur.png" alt="slide2">
+                        </div>
+                        <div class="item">
+                            <img class="imgSlider" src="../images/foto-test.png" alt="slide3">
+                        </div>
+                        <div class="item">
+                            <img class="imgSlider" src="../images/foto-ducktur.png" alt="slide4">
+                        </div>
+                        <div class="item">
+                            <img class="imgSlider" src="../images/foto-test.png" alt="slide5">
+                        </div>
+                        <div class="item">
+                            <img class="imgSlider" src="../images/foto-ducktur.png" alt="slide6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="../scripts/homepage.js"></script>
 </body>
 
-</html>
+</html> 
