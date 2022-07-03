@@ -1,1 +1,8 @@
-Iniciar a criação da seção 3.
+Header
+    Falta organizar e criar a navbar
+
+Body
+    banner - ok
+    brand - ok
+    sec1 - falta organizar
+    sec2 - criando
