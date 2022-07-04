@@ -4,5 +4,16 @@ Header
 Body
     banner - ok
     brand - ok
-    sec1 - falta organizar
-    sec2 - criando
+    sec1 - ok
+    sec2 - ok
+    sec3 - ok
+    sec4 - ok
+    footer - ok
+
+--------------------------------------------------------------
+- P E N D Ê N C I A S
+
+- efeitos
+- rotas
+- páginas secundarias
+- página de abertura
