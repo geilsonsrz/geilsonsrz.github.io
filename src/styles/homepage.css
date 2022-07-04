@@ -32,6 +32,12 @@ p {
     font-size: 1.2em;
 }
 
+/*
+#########################################################################################
+    HEADER
+#########################################################################################
+*/
+
 header{
     position: absolute;
     top: 0;
@@ -97,6 +103,12 @@ header ul li a {
     background-color: #000;
 }
 
+/*
+#########################################################################################
+    BANNER
+#########################################################################################
+*/
+
 .banner {
     height: 100vh;
     background: url(../images/banner.png) no-repeat;
@@ -150,6 +162,12 @@ header ul li a {
     top: 0;
     height: 100%;
 }
+
+/*
+#########################################################################################
+    BRAND
+#########################################################################################
+*/
 
 .brand-logo {
     padding: 1.875em 0;
@@ -343,7 +361,7 @@ SETOR 02
 }
 
 .sec4 {
-    padding: 6.25em 0;
+    padding: 6em 0;
 }
 .sec4 h3 {
     text-transform: uppercase;
@@ -381,4 +399,76 @@ SETOR 02
 }
 .box:hover .img {
     opacity: 1;
+}
+
+/*
+#########################################################################################
+    FOOTER
+#########################################################################################
+*/
+/* Resolução logo footer */
+.logoFooter {
+    width: 7em;
+}
+
+footer {
+    position: relative;
+    padding: 2.5em 0;
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-inner .column {
+    padding-right: 2em;
+}
+
+footer ul {
+    margin-left: 0;
+}
+footer ul li {
+    list-style: none;
+    margin-bottom: 0.5em;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background: linear-gradient(to left, transparent, #fff, transparent);
+}
+
+footer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background: linear-gradient(to left, transparent, #fff, transparent);
+}
+
+/*
+#########################################################################################
+    Copyright
+#########################################################################################
+*/
+
+.copyright {
+    padding: 1.5em 0;
+    text-align: center;
+}
+.copyright p {
+    font-size: 0.8em;
 }
