@@ -1,7 +1,10 @@
-Header
+--------------------------------------------------------------
+- P R O N T O
+
+- Header
     Falta organizar e criar a navbar
 
-Body
+- Body
     banner - ok
     brand - ok
     sec1 - ok
@@ -13,7 +16,8 @@ Body
 --------------------------------------------------------------
 - P E N D Ê N C I A S
 
-- efeitos
-- rotas
-- páginas secundarias
-- página de abertura
+- Efeitos
+- Rotas
+- Páginas Secundarias
+- Página de Abertura
+- Responsividade
