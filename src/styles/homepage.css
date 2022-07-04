@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Spectral+SC:ital,wght@1,200&display=swap');
 /*********
 Começo do CSS
 *********/
@@ -10,7 +11,7 @@ Começo do CSS
 body {
     background-color: #000;
     color: #fff;
-    font-family: monospace;
+    font-family: 'Kelly Slab', cursive;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -184,6 +185,14 @@ header ul li a {
 .fotoBrand {
     width: 7em;
 }
+
+.btnBrand {
+    transition: 1.5s;
+}
+.btnBrand:hover {
+    transform: scale(1.2);
+}
+
 
 /*
 #########################################################################################
