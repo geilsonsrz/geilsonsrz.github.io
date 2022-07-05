@@ -1,21 +1,19 @@
 --------------------------------------------------------------
 - P R O N T O
 
-- Header
-    Falta organizar e criar a navbar
 
-- Body
-    banner - ok
-    brand - ok
-    sec1 - ok
-    sec2 - ok
-    sec3 - ok
-    sec4 - ok
-    footer - ok
+- sec4 - OK
+- footer - OK
 
 --------------------------------------------------------------
 - P E N D Ê N C I A S
 
+- Navbar
+- Banner
+- Brand
+- sec1
+- sec2
+- sec3
 - Efeitos
 - Rotas
 - Páginas Secundarias
