@@ -95,7 +95,11 @@ header ul li a {
 }
 .itemMenu:hover {
     transition: all ease 0.3s;
-    transform: scale(1.3);
+    transform: scale(1.2);
+}
+.itemMenu:hover a {
+    transition: 0.3s;
+    color: #2806a7;
 }
 
 .text h2 {
@@ -155,7 +159,7 @@ header ul li a {
     width: 100%;
     height: 0;
     background-color: #000;
-    opacity: 0.9;
+    opacity: .9;
     z-index: -1;
     transition: all ease 0.5s;
 }
@@ -181,9 +185,6 @@ header ul li a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-}
-.fotoBrand {
-    width: 7em;
 }
 
 .btnBrand {
@@ -321,46 +322,6 @@ SETOR 02
     margin-top: 3em;
 }
 
-/* Sem efeito notável 
-.slick-arrow {
-    position: relative;
-    top: 5em;
-}
-
-.slick-prev {
-    left: inherit;
-    right: 11.25em;
-}
-
-.slick-next {
-    right: 90px;
-}
-----------------------------------------------------------
-    TEM EFEITO NOTÁVEL MAS FICA DESCONFIGURADO
-
-.slick-nex::before,
-.slick-prev::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fff url(../images/arrow-next.svg) no-repeat;
-    background-size: 0.9em;
-    background-position: center;
-    width: 3em;
-    height: 3em;
-    line-height: 3em;
-    border: 0.1em solid #fff;
-    opacity: 1;
-}
-.slick-perev::before {
-    background: transparent url(../images/arrow-prev.svg) no-repeat;
-    background-size: 0.9em;
-    background-position: center;
-
-}
-*/
-
 /*
 #########################################################################################
     SETOR 04
@@ -369,11 +330,11 @@ SETOR 02
 
 /* Controle de imagem */
 .box .img img {
-    width: 16.5em;
+    width: 11em;
 }
 
 .sec4 {
-    padding: 6em 0;
+    padding: 6em 0 3em 0;
 }
 .sec4 h3 {
     text-transform: uppercase;
@@ -382,7 +343,7 @@ SETOR 02
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 5.625em;
+    margin-top: 2em;
 }
 
 .box {
@@ -390,8 +351,8 @@ SETOR 02
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 23%;
-    min-height: 16em;
+    min-width: 11em;
+    min-height: 11em;
     border: 0.1em solid #fff;
     margin-bottom: 2.5em;
     overflow: hidden;
@@ -400,6 +361,7 @@ SETOR 02
     font-family: Space Grotesk;
     font-size: 1.1em;
     font-weight: 400;
+    transition:  all ease 1.5s;
 }
 .sec4-boxes .img {
     position: absolute;
@@ -411,6 +373,10 @@ SETOR 02
 }
 .box:hover .img {
     opacity: 1;
+}
+.box:hover h6 {
+    transition:  all ease 1.5s;
+    color: transparent;
 }
 
 /*
@@ -449,6 +415,9 @@ footer ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 0.9;
+}
+footer ul li a:hover {
+    color: #2806a7;
 }
 
 footer::before {
