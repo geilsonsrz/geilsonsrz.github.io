@@ -193,6 +193,7 @@ header ul li a {
 }
 
 .btn:hover {
+    cursor: pointer;
     color: #fff;
 }
 
@@ -289,7 +290,7 @@ SETOR 01
 SETOR 02
 #########################################################################################
 */
-.logoProjeto {
+.logoProject {
     width: 20rem;
 }
 
@@ -359,18 +360,18 @@ SETOR 02
 .sec3 {
     padding: 7rem 0 0;
 }
-.sec3 h3 {
+.sec3 h2 {
     text-transform: uppercase;
     max-width: 60%;
 }
 /* Ajuste da resolucao das imagens de rolagens */
-.sec3-slider .item .logoProjeto {
+.sec3-slider .item .logoProject {
     width: 100%;
     padding: 0 .5rem;
     opacity: 0.2;
     transition: 1s;
 }
-.sec3-slider .item .logoProjeto:hover {
+.sec3-slider .item .logoProject:hover {
     opacity: 1;
 }
 .sec3-slider {
@@ -380,7 +381,7 @@ SETOR 02
 /* EM DESENVOLVIMENTO */
 .dev {
     position: absolute;
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 320px;
     height: 480px;
     background-color: transparent;
@@ -407,7 +408,7 @@ SETOR 02
 
 
 /* PROJETOS EM BREVE*/ 
-.emBreve {
+.inDev {
     font-size: 1.5rem;
     width: 320px;
     height: 480px;
@@ -416,7 +417,7 @@ SETOR 02
     align-items: center;
     justify-content: center;
 }
-.emBreve span {
+.inDev span {
     transform: rotate(-30deg);
     width: 50%;
     text-align: center;
@@ -426,10 +427,10 @@ SETOR 02
     background-color: rgba(0, 0, 0, .5);
     transition: .3s;
 }
-.emBreve span:hover {
+.inDev span:hover {
     transform: scale(2);
 }
-.emBreve span:active {
+.inDev span:active {
     transform: scale(1.5);
 }
 
@@ -449,7 +450,7 @@ SETOR 02
     padding: 6em 0 3em 0;
 }
 
-.sec4 h3 {
+.sec4 h2 {
     text-transform: uppercase;
 }
 
