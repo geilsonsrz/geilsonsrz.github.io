@@ -2,3 +2,20 @@
     margin: 0;
     padding: 0;
 }
+
+
+.linkHomepage {
+    width: 280px;
+    margin: 2.5%;
+}
+
+
+.linkHomepage a:link,
+.linkHomepage a:visited{
+    color: black;
+    text-decoration: none;
+}
+.linkHomepage a:hover,
+.linkHomepage a:active:hover{
+    background: red;
+}
