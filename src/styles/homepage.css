@@ -220,7 +220,7 @@ header ul li a {
 }
 
 .btnBrand {
-    transition: 1.5s;
+    transition: 1s;
 }
 
 .btnBrand:hover {
