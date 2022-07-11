@@ -1,13 +1,11 @@
 --------------------------------------------------------------
 - P R O N T O
 
-
-
-
-- Banner
-- Brand
-- sec2
-- sec3
+- Banner - OK
+- Brand - OK
+- sec1 - OK
+- sec2 - OK
+- sec3 - OK
 - sec4 - OK
 - footer - OK
 
@@ -15,8 +13,6 @@
 - P E N D Ê N C I A S
 
 - Navbar
-- sec1
 - Efeitos
 - Rotas
-- Página de Abertura
 - Responsividade
