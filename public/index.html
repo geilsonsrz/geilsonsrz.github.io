@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/homepage.css">
+    <link rel="stylesheet" href="../src/styles/index.css">
     <!-- Referências da rolagens do setor 3 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
@@ -16,11 +16,11 @@
     <main>
         <header>
             <div class="logo">
-                <img id="minhaLogo" src="../../public/img-logo.svg" alt="Logo name">
+                <img id="minhaLogo" src="./img-logo.svg" alt="Logo name">
             </div>
             <div class="Menu">
                 <ul>
-                    <li class="itemMenu"><a href="../../index.html">Home</a></li>
+                    <li class="itemMenu"><a href="#">Home</a></li>
                     <li class="itemMenu"><a href="#">About me</a></li>
                     <li class="itemMenu"><a href="#">Projects</a></li>
                     <li class="itemMenu"><a href="#">Activities</a></li>
@@ -78,16 +78,36 @@
                     </div>
                     <div class="text text-rigth">
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Sint architecto eos deserunt cum eius, quae odit ut officia 
-                            debitis ipsum porro repellat provident tempore alias dicta. 
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Sint architecto eos deserunt cum eius, quae odit ut officia
+                            debitis ipsum porro repellat provident tempore alias dicta.
                             Laudantium unde id dolores dignissimos facere culpa tempora nobis.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat 
-                            veniam at earum unde vero, quae nemo quam esse ducimus. 
-                            Perferendis, esse dolorum earum tenetur non dicta cum eveniet 
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+                            veniam at earum unde vero, quae nemo quam esse ducimus.
+                            Perferendis, esse dolorum earum tenetur non dicta cum eveniet
                             illum est doloremque iste. Tenetur, non ipsam.
                         </p>
                     </div>
+                </div>
+                <div class="container-cv">
+                    <a 
+                    class="cv" 
+                    id="cv-pt" 
+                    href="" 
+                    download="cv_pt" 
+                    target="_blank">Currículo</a>
+                    <a 
+                    class="cv" 
+                    id="cv-es" 
+                    href="" 
+                    download="cv_es" 
+                    target="_blank">Currículo</a>
+                    <a 
+                    class="cv"
+                    id="cv-en" 
+                    href="" 
+                    download="cv_en" 
+                    target="_blank">Curriculum</a>
                 </div>
             </div>
         </section>
@@ -99,16 +119,16 @@
                     <div class="img">
                         <div class="img">
                             <div class="dev"><span>In Development</span></div>
-                            <img class="logoProject" src="../images/projeto-ducktur.png" alt="Foto projeto.">
+                            <img class="logoProject" src="../src/images/projeto-ducktur.png" alt="Foto projeto.">
                         </div>
                     </div>
                     <div class="text">
                         <h2>Duck Tur</h2>
                         <div class="text-inner">
                             <p>
-                                DuckTur is a project created for the purpose of training my learning of React. 
-                                The project is limited to the front-end. The idea is that the project delivers 
-                                to the user information about some cities and a form in case the user is 
+                                DuckTur is a project created for the purpose of training my learning of React.
+                                The project is limited to the front-end. The idea is that the project delivers
+                                to the user information about some cities and a form in case the user is
                                 interested in hiring a service.
                             </p>
                             <a href="#" class="btn">Learn More</a>
@@ -153,19 +173,19 @@
                     </p>
                     <div class="sec3-slider">
                         <div class="item">
-                            <img class="logoProject" src="../images/img-1.png" alt="CMJ">
+                            <img class="logoProject" src="../src/images/img-1.png" alt="CMJ">
                         </div>
                         <div class="item">
-                            <img class="logoProject" src="../images/img-2.png" alt="MathLibras">
+                            <img class="logoProject" src="../src/images/img-2.png" alt="MathLibras">
                         </div>
                         <div class="item">
-                            <img class="logoProject" src="../images/img-3.png" alt="slide3">
+                            <img class="logoProject" src="../src/images/img-3.png" alt="slide3">
                         </div>
                         <div class="item">
-                            <img class="logoProject" src="../images/img-4.png" alt="slide4">
+                            <img class="logoProject" src="../src/images/img-4.png" alt="slide4">
                         </div>
                         <div class="item">
-                            <img class="logoProject" src="../images/img-5.png" alt="slide5">
+                            <img class="logoProject" src="../src/images/img-5.png" alt="slide5">
                         </div>
                     </div>
                 </div>
@@ -181,73 +201,73 @@
                         <div class="box">
                             <h6>HTML 5</h6>
                             <div class="img">
-                                <img src="../images/logo-html5.png" alt="eu1">
+                                <img src="../src/images/logo-html5.png" alt="eu1">
                             </div>
                         </div>
                         <div class="box">
                             <h6>CSS 3</h6>
                             <div class="img">
-                                <img src="../images/logo-css3.png" alt="eu2">
+                                <img src="../src/images/logo-css3.png" alt="eu2">
                             </div>
                         </div>
                         <div class="box">
                             <h6>Sass</h6>
                             <div class="img">
-                                <img src="../images/logo-sass.png" alt="eu8">
+                                <img src="../src/images/logo-sass.png" alt="eu8">
                             </div>
                         </div>
                         <div class="box">
                             <h6>JavaScript</h6>
                             <div class="img">
-                                <img src="../images/logo-js.png" alt="eu3">
+                                <img src="../src/images/logo-js.png" alt="eu3">
                             </div>
                         </div>
                         <div class="box">
                             <h6>TypeScript</h6>
                             <div class="img">
-                                <img src="../images/logo-ts.png" alt="eu4">
+                                <img src="../src/images/logo-ts.png" alt="eu4">
                             </div>
                         </div>
                         <div class="box">
                             <h6>Python</h6>
                             <div class="img">
-                                <img src="../images/logo-py.png" alt="eu5">
+                                <img src="../src/images/logo-py.png" alt="eu5">
                             </div>
                         </div>
                         <div class="box">
                             <h6>Node.js</h6>
                             <div class="img">
-                                <img src="../images/logo-node.png" alt="eu6">
+                                <img src="../src/images/logo-node.png" alt="eu6">
                             </div>
                         </div>
                         <div class="box">
                             <h6>Express</h6>
                             <div class="img">
-                                <img src="../images/logo-express.png" alt="eu7">
+                                <img src="../src/images/logo-express.png" alt="eu7">
                             </div>
                         </div>
                         <div class="box">
                             <h6>SQLite</h6>
                             <div class="img">
-                                <img src="../images/logo-sqlite.png" alt="eu8">
+                                <img src="../src/images/logo-sqlite.png" alt="eu8">
                             </div>
                         </div>
                         <div class="box">
                             <h6>PostgreSQL</h6>
                             <div class="img">
-                                <img src="../images/logo-postgresql.png" alt="eu8">
+                                <img src="../src/images/logo-postgresql.png" alt="eu8">
                             </div>
                         </div>
                         <div class="box">
                             <h6>MongoDB</h6>
                             <div class="img">
-                                <img src="../images/logo-mongodb.png" alt="eu8">
+                                <img src="../src/images/logo-mongodb.png" alt="eu8">
                             </div>
                         </div>
                         <div class="box">
                             <h6>React</h6>
                             <div class="img">
-                                <img src="../images/logo-react.png" alt="eu8">
+                                <img src="../src/images/logo-react.png" alt="eu8">
                             </div>
                         </div>
                     </div>
@@ -260,7 +280,7 @@
             <div class="container">
                 <div class="footer-inner">
                     <div class="column">
-                        <img class="logoFooter" src="../../public/img-logo.svg" alt="">
+                        <img class="logoFooter" src="./img-logo.svg" alt="">
                     </div>
                     <div class="column">
                         <ul>
@@ -294,7 +314,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="../scripts/homepage.js"></script>
+    <script src="../src/scripts/index.js"></script>
 
 </body>
 
