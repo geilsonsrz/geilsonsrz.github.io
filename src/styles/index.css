@@ -135,7 +135,7 @@ header ul li a {
 
 .itemMenu a {
     font-weight: bold;
-    color: #5a5a5a;
+    color: rgb(90, 90, 90, .75);
 }
 
 .itemMenu:hover {
@@ -145,7 +145,7 @@ header ul li a {
 
 .itemMenu:hover a {
     transition: 0.3s;
-    color: #0628a7;
+    color: rgba(40, 6, 167, 1);
 }
 
 /*
