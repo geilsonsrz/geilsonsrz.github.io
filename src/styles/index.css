@@ -126,7 +126,7 @@ header ul li a {
 }
 
 .logo:active {
-    transform: scale(0.5);
+    transform: scale(.5);
 }
 
 .logoProjeto {
@@ -139,13 +139,11 @@ header ul li a {
 }
 
 .itemMenu:hover {
-    transition: all ease 0.3s;
     transform: scale(1.2);
 }
 
 .itemMenu:hover a {
-    transition: 0.3s;
-    color: rgba(40, 6, 167, 1);
+    color: #2806a7;
 }
 
 /*
@@ -251,7 +249,7 @@ BANNER
     transform: scale(1.2);
 }
 
-.img-eu{
+.img-eu {
     width: 15rem;
     border-radius: 10%;
 }
