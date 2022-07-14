@@ -1,19 +1,37 @@
+//===============================================================================
 // Rolagem do SETOR 3 - slick
 $('.sec3-slider').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    speed: 1500
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  speed: 1500
 });
 
+//===============================================================================
 //Rooly 0.2.1
 const r = rolly({
-    view: document.querySelector('.app'),
-    native: true
-  });
-  
-  r.init();
-  
-  AOS.init({
-    duration: 1500
-  });
+  view: document.querySelector('.app'),
+  native: true
+});
+
+r.init();
+
+AOS.init({
+  duration: 1500
+});
+
+//===============================================================================
+//ROTAS - Link
+const menuItems = document.querySelectorAll('.menu a[href^="#"]');
+
+function scrollToIdOnClick(event){
+  const element = event.target
+  const id = element.getAttribute('href')
+  const local = document.querySelector(id).offsetTop
+
+  window.scroll(0, local)
+};
+
+menuItems.forEach( item => {
+  item.addEventListener('click', scrollToIdOnClick)
+});

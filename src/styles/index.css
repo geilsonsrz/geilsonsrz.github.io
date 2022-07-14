@@ -163,6 +163,7 @@ BANNER
 }
 
 .banner {
+    min-height: 400px;
     height: 100vh;
     background: url(../images/banner.png) no-repeat;
     background-size: cover;
@@ -445,7 +446,7 @@ SETOR 02
 #########################################################################################
 */
 .sec3 {
-    padding: 7rem 0 0;
+    padding: 5rem 0 0;
 }
 
 .sec3 h2 {
