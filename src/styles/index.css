@@ -606,6 +606,11 @@ SETOR 02
     width: 7em;
 }
 
+.icone-footer {
+    width: 2.5rem;
+    border-radius: 50px;
+}
+
 footer {
     position: relative;
     padding: 2.5em 0;
@@ -633,11 +638,6 @@ footer ul li {
 footer ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 0.9;
-}
-
-footer ul li a:hover {
-    color: #2806a7;
 }
 
 footer::before {
@@ -659,6 +659,26 @@ footer::after {
     height: 0.1em;
     background: linear-gradient(to left, transparent, #fff, transparent);
 }
+
+#facebook:hover {
+    color: #3b5998;
+}
+#instagram:hover {
+    background-image: url(../images/bg-instagram.png);
+    background-size: cover;
+    background-position: bottom;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+#linkedin:hover {
+    color: #0e76a8;
+}
+#github:hover {
+    color: #505050;
+}
+
+
 
 /*
 #########################################################################################
