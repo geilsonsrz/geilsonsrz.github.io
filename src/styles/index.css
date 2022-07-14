@@ -82,10 +82,10 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.875rem 6.25em;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     z-index: 999;
 }
 
@@ -145,7 +145,7 @@ header ul li a {
 
 .itemMenu:hover a {
     transition: 0.3s;
-    color: #2806a7;
+    color: #0628a7;
 }
 
 /*
