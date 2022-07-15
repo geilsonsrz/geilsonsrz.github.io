@@ -22,8 +22,6 @@ AOS.init({
 
 //===============================================================================
 //ROTAS - Link
-const menuItems = document.querySelectorAll('.menu a[href^="#"]');
-
 function scrollToIdOnClick(event){
   const element = event.target
   const id = element.getAttribute('href')
@@ -32,6 +30,20 @@ function scrollToIdOnClick(event){
   window.scroll(0, local)
 };
 
+const menuItems = document.querySelectorAll('#menu a[href^="#"]');
+
 menuItems.forEach( item => {
   item.addEventListener('click', scrollToIdOnClick)
 });
+
+//===============================================================================
+//Responsividade MENU
+function clickBtMenu(){
+  const navbar = document.querySelector('#navbar')
+  //Adicionando uma classe de ativado ou desativado.
+  navbar.classList.toggle('active')
+};
+
+const btMenu = document.querySelector('#btn-menu')
+
+btMenu.addEventListener('click', clickBtMenu)
