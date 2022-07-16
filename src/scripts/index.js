@@ -1,10 +1,30 @@
 //===============================================================================
 // Rolagem do SETOR 3 - slick
+
+
 $('.sec3-slider').slick({
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
-  speed: 1500
+  speed: 1500,
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    }
+  ]
 });
 
 //===============================================================================
@@ -22,7 +42,7 @@ AOS.init({
 
 //===============================================================================
 //ROTAS - Link
-function scrollToIdOnClick(event){
+function scrollToIdOnClick(event) {
   const element = event.target
   const id = element.getAttribute('href')
   const local = document.querySelector(id).offsetTop
@@ -32,13 +52,13 @@ function scrollToIdOnClick(event){
 
 const menuItems = document.querySelectorAll('#menu a[href^="#"]');
 
-menuItems.forEach( item => {
+menuItems.forEach(item => {
   item.addEventListener('click', scrollToIdOnClick)
 });
 
 //===============================================================================
 //Responsividade MENU
-function clickBtMenu(){
+function clickBtMenu() {
   const navbar = document.querySelector('#navbar')
   //Adicionando uma classe de ativado ou desativado.
   navbar.classList.toggle('active')

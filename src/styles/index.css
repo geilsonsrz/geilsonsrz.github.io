@@ -12,12 +12,7 @@ body {
     font-family: 'Kelly Slab', cursive;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia' sans-serif;
 }
 
@@ -546,7 +541,7 @@ SETOR 04
 }
 
 .sec4 {
-    padding: 6em 0 3em 0;
+    padding: 3em 0 3em 0;
 }
 
 .sec4 h2 {
@@ -702,226 +697,286 @@ footer::after {
 #########################################################################################
 */
 /*
-    CSS MENU - 1024 - 1440px
+    CSS - 1024 - 1440px
 */
 @media (max-width: 1439px) {
 
     h1 {
         font-size: 3em;
     }
-
     h2 {
         font-size: 2em;
     }
-
     h3 {
         font-size: 1.2em;
     }
-
     p {
         font-size: 1.1em;
     }
-
     .brand-logo-inner {
         justify-content: space-around;
     }
-
     .sec1 {
         padding: 3em;
     }
-
     .sec3 {
         padding: 3em;
     }
-
     .sec4 {
         margin: 0 2em 0 2em;
     }
+    footer {
+        margin: 0 2rem;
+    }
+
+/*
+    CSS MENU - 280px - 1023px
+*/
+@media (max-width: 1023px) {
+    header {
+        align-items: center;
+    }
+    #navbar.active #menu {
+        height: 70vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #btn-menu {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+    }
+    #dash {
+        display: block;
+        width: 1.5rem;
+        border-top: .2rem solid #fff;
+        transition: .6s;
+    }
+    #dash::after,
+    #dash::before {
+        content: '';
+        display: block;
+        width: 1.5rem;
+        height: .2rem;
+        margin-top: .1rem;
+        background: currentColor;
+        transition: .6s;
+    }
+    #navbar.active #dash {
+        border-top-color: transparent;
+    }
+    #navbar.active #dash::after {
+        transform: rotate(135deg);
+    }
+    #navbar.active #dash::before {
+        transform: rotate(-135deg);
+    }
+    #menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        right: 0px;
+        background-color: rgba(0, 0, 0, .9);
+        justify-items: center;
+        align-items: center;
+        transition: 1s;
+        z-index: 999;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    .itemMenu {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .itemMenu:hover {
+        transform: scale(1);
+    }
+    .itemMenu a {
+        color: #fff;
+    }
 
     /*
-        CSS MENU - 280px - 1023px
+    Outros ajustes.
+    CSS - 768PX - 1023PX
     */
-    @media (max-width: 1023px) {
-
-        header {
-            align-items: center;
-        }
-
-        #navbar.active #menu {
-            height: 70vh;
-            visibility: visible;
-            overflow-y: auto;
-
-        }
-
-        #btn-menu {
-            display: flex;
-            padding: .5rem 1rem;
-            font-size: 1rem;
-            border: none;
-            background: transparent;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        #dash {
-            display: block;
-            width: 1.5rem;
-            border-top: .2rem solid #fff;
-            transition: .6s;
-        }
-
-        #dash::after,
-        #dash::before {
-            content: '';
-            display: block;
-            width: 1.5rem;
-            height: .2rem;
-            margin-top: .1rem;
-            background: currentColor;
-            transition: .6s;
-        }
-
-        #navbar.active #dash {
-            border-top-color: transparent;
-        }
-
-        #navbar.active #dash::after {
-            transform: rotate(135deg);
-        }
-
-        #navbar.active #dash::before {
-            transform: rotate(-135deg);
-        }
-
-        #menu {
-            display: grid;
-            grid-template-columns: 1fr;
-            position: absolute;
-            width: 100%;
-            height: 0;
-            right: 0px;
-            background-color: rgba(0, 0, 0, .9);
-            justify-items: center;
-            align-items: center;
-            transition: 1s;
-            z-index: 999;
-            visibility: hidden;
-            overflow-y: hidden;
-        }
-
-        .itemMenu {
-            display: flex;
-            justify-items: center;
-            align-items: center;
-            margin-top: 1rem;
-        }
-
-        .itemMenu:hover {
-            transform: scale(1);
-        }
-
-        .itemMenu a {
-            color: #fff;
-        }
-
-        /*
-        Outros ajustes.
-        CSS - 768PX - 1023PX
-        */
-        .logoProject {
-            width: 15rem;
-        }
-        .sec2 {
-            padding: 5em 0 0;
-        }
-        .sec2 .text-inner {
-            position: relative;
-            margin: 2.5em 0 0 8em;
-        }
-        .sec2-inner .text {
-            width: 50%;
-            margin-left: -4.05em;
-            z-index: 9;
-        }
-        .letf-right-sec:nth-child(even) .text {
-            margin-right: -4.05em;
-            text-align: right;
-        }
-        .letf-right-sec:nth-child(even) .text-inner {
-            margin: 2.5em 8em 0 0;
-        }
-        .letf-right-sec:nth-child(even) .text-inner::before {
-            left: inherit;
-            right: -1.875em;
-        }
-        /* EM DESENVOLVIMENTO */
-        .dev {
-            font-size: 1.2rem;
-            width: 15rem;
-            height: auto;
-            background-color: transparent;
-        }
-
-        .dev span {
-            transform: rotate(0deg);
-            width: 100%;
-            text-align: center;
-            margin-top: 9rem;
-            border: 0.1rem solid #fff;
-            border-radius: .2rem;
-            background-color: rgba(0, 0, 0, .5);
-        }
-        .dev span:hover {
-            transform: scale(1);
-        }
-        .dev span:active {
-            transform: scale(1);
-        }
-        /* PROJETOS EM BREVE*/
-        .inDev {
-            font-size: 1.5rem;
-            width: 15rem;
-            height: 25rem;
-            background-color: #8b0f0f;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .inDev span {
-            transform: rotate(0deg);
-            width: 100%;
-            text-align: center;
-            padding: .5rem;
-            border: 0.1rem solid #fff;
-            border-radius: .2rem;
-            background-color: rgba(0, 0, 0, .5);
-            transition: .3s;
-        }
-        .inDev span:hover {
-            transform: scale(1);
-        }
-        .inDev span:active {
-            transform: scale(1);
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .logoProject {
+        width: 15rem;
     }
-}
+    .sec2 {
+        padding: 5em 0 0;
+    }
+    .sec2 .text-inner {
+        position: relative;
+        margin: 2.5em 0 0 8em;
+    }
+    .sec2-inner .text {
+        width: 50%;
+        margin-left: -4.05em;
+        z-index: 9;
+    }
+    .letf-right-sec:nth-child(even) .text {
+        margin-right: -4.05em;
+        text-align: right;
+    }
+    .letf-right-sec:nth-child(even) .text-inner {
+        margin: 2.5em 8em 0 0;
+    }
+    .letf-right-sec:nth-child(even) .text-inner::before {
+        left: inherit;
+        right: -1.875em;
+    }
+    /* EM DESENVOLVIMENTO */
+    .dev {
+        font-size: 1.2rem;
+        width: 15rem;
+        height: auto;
+        background-color: transparent;
+    }
+    .dev span {
+        transform: rotate(0deg);
+        width: 100%;
+        text-align: center;
+        margin-top: 9rem;
+        border: 0.1rem solid #fff;
+        border-radius: .2rem;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    .dev span:hover {
+        transform: scale(1);
+    }
+    .dev span:active {
+        transform: scale(1);
+    }
+    /* PROJETOS EM BREVE*/
+    .inDev {
+        font-size: 1.5rem;
+        width: 15rem;
+        height: 25rem;
+        background-color: #8b0f0f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .inDev span {
+        transform: rotate(0deg);
+        width: 100%;
+        text-align: center;
+        padding: .5rem;
+        border: 0.1rem solid #fff;
+        border-radius: .2rem;
+        background-color: rgba(0, 0, 0, .5);
+        transition: .3s;
+    }
+    .inDev span:hover {
+        transform: scale(1);
+    }
+    .inDev span:active {
+        transform: scale(1);
+    }
+
+/*
+CSS 425px - 767px
+*/
+@media (max-width:767px) {
+    .sec1-inner {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+    }
+    .sec1-inner .text-left {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: 100%;
+    }
+    .sec1-inner .text-left h3 {
+        margin-top: 1rem;
+    }
+    .sec1-inner .text {
+        width: 100%;
+    }
+    .container-cv {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #cv-pt {
+        background-image: url('../images/b-bra.png');
+        background-size: cover;
+        background-position: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    #cv-es {
+        background-image: url('../images/b-esp.png');
+        background-size: cover;
+        background-position: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    #cv-en {
+        background-image: url('../images/b-ing.png');
+        background-size: cover;
+        background-position: top;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+
+
+    .sec2-inner {
+        display: flex;
+        justify-items: flex-start;
+        align-items: flex-start;
+    }
+    .sec2-inner .text h2 {
+        margin-bottom: 12rem;
+    }
+    .sec2-inner .text-inner p {
+        display: none;
+    }
+    .sec2-inner .text-inner {
+        position: relative;
+        margin: 0em 0 0 0em;
+    }
+    .sec2 .text-inner::before {
+        background: transparent;
+    }
+    .sec2-inner .text-inner .btn {
+        position: relative;
+        display: inline-block;
+        width: 7rem;
+        height: 2.5rem;
+        border-radius: .2rem;
+        background-color: #fff;
+        color: #2806a7;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        line-height: 2.5em;
+        z-index: 9;
+        transition: all ease 0.5s;
+    }
+    .letf-right-sec .sec2-inner{
+        margin: 0 2rem;
+    }
+
+
+
+
+
+
+}}}
