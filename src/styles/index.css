@@ -20,19 +20,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia' sans-serif;
 }
-
 h1 {
     font-size: 3.5em;
 }
-
 h2 {
     font-size: 2.5em;
 }
-
 h3 {
     font-size: 1.25em;
 }
-
 p {
     font-size: 1.2em;
 }
@@ -251,6 +247,10 @@ a:visited:active {
 .img-eu {
     width: 15rem;
     border-radius: 10%;
+}
+
+.text p {
+    margin-top: 2rem;
 }
 
 /*
@@ -698,96 +698,118 @@ footer::after {
     Responsividade
 #########################################################################################
 */
-
 /*
-    CSS MENU - 280px - 1023px
+    CSS MENU - 1024 - 1440px
 */
-@media (max-width: 1023px) {
+@media (max-width: 1439px) {
 
-    header {
-        align-items: center;
+    h1 {
+        font-size: 3em;
     }
 
-    #navbar.active #menu {
-        height: 70vh;
-        visibility: visible;
-        overflow-y: auto;
 
-    }
+
+
+
+
+
+
+
+
     
-    #btn-menu {
-        display: flex;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        border: none;
-        background: transparent;
-        color: #fff;
-        cursor: pointer;
-    }
-    #dash {
-        display: block;
-        width: 1.5rem;
-        border-top: .2rem solid #fff;
-        transition: .6s;
-    }
-    #dash::after, #dash::before {
-        content: '';
-        display: block;
-        width: 1.5rem;
-        height: .2rem;
-        margin-top: .1rem;
-        background: currentColor;
-        transition: .6s;
-    }
-
-    #navbar.active #dash {
-        border-top-color: transparent;
-    }
-    #navbar.active #dash::after {
-        transform: rotate(135deg);
-    }
-    #navbar.active #dash::before{
-        transform: rotate(-135deg);
-    }
-
-    #menu {
-        display: grid;
-        grid-template-columns: 1fr;
-        position: absolute;
-        width: 100%;
-        height: 0;
-        right: 0px;
-        background-color: rgba(0, 0, 0, .9);
-        justify-items: center;
-        align-items: center;
-        transition: 1s;
-        z-index: 999;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
+    /*
+        CSS MENU - 280px - 1023px
+    */
+    @media (max-width: 1023px) {
     
-    .itemMenu {
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        margin-top: 1rem;
-    }
+        header {
+            align-items: center;
+        }
     
-    .itemMenu:hover {
-        transform: scale(1);
-    }
+        #navbar.active #menu {
+            height: 70vh;
+            visibility: visible;
+            overflow-y: auto;
+    
+        }
+        
+        #btn-menu {
+            display: flex;
+            padding: .5rem 1rem;
+            font-size: 1rem;
+            border: none;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+        }
+        #dash {
+            display: block;
+            width: 1.5rem;
+            border-top: .2rem solid #fff;
+            transition: .6s;
+        }
+        #dash::after, #dash::before {
+            content: '';
+            display: block;
+            width: 1.5rem;
+            height: .2rem;
+            margin-top: .1rem;
+            background: currentColor;
+            transition: .6s;
+        }
+    
+        #navbar.active #dash {
+            border-top-color: transparent;
+        }
+        #navbar.active #dash::after {
+            transform: rotate(135deg);
+        }
+        #navbar.active #dash::before{
+            transform: rotate(-135deg);
+        }
+    
+        #menu {
+            display: grid;
+            grid-template-columns: 1fr;
+            position: absolute;
+            width: 100%;
+            height: 0;
+            right: 0px;
+            background-color: rgba(0, 0, 0, .9);
+            justify-items: center;
+            align-items: center;
+            transition: 1s;
+            z-index: 999;
+            visibility: hidden;
+            overflow-y: hidden;
+        }
+        
+        .itemMenu {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        
+        .itemMenu:hover {
+            transform: scale(1);
+        }
+    
+        .itemMenu a {
+            color: #fff;
+        }
+    
+    
+    
+    };
 
-    .itemMenu a {
-        color: #fff;
-    }
-};
-/*
-    280px - 320px
-*/
-@media (max-width: 320px) {
+}    
 
 
-};
+
+
+
+
 
 
 
