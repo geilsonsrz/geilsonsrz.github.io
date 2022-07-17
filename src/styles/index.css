@@ -1036,12 +1036,6 @@ CSS 280px - 424px
         display: grid;
         justify-content: space-evenly;
     }
-    .box .img {
-        opacity: 1;
-    }
-    .box h6 {
-        color: transparent;
-    }
     footer {
         padding: 0;
     }
