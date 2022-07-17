@@ -541,7 +541,7 @@ SETOR 04
 }
 
 .sec4 {
-    padding: 3em 0 3em 0;
+    padding: 1rem 0;
 }
 
 .sec4 h2 {
@@ -736,6 +736,9 @@ footer::after {
     header {
         align-items: center;
     }
+    h1 {
+        font-size: 2.5rem;
+    }
     #navbar.active #menu {
         height: 70vh;
         visibility: visible;
@@ -886,6 +889,15 @@ footer::after {
 CSS 425px - 767px
 */
 @media (max-width:767px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3, p {
+        font-size: 1rem;
+    }
     .sec1-inner {
         display: grid;
         grid-template-columns: 1fr;
@@ -907,6 +919,7 @@ CSS 425px - 767px
     .container-cv {
         display: grid;
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
     #cv-pt {
         background-image: url('../images/b-bra.png');
@@ -935,8 +948,6 @@ CSS 425px - 767px
         color: transparent;
         font-weight: bold;
     }
-
-
     .sec2-inner {
         display: flex;
         justify-items: flex-start;
@@ -973,10 +984,78 @@ CSS 425px - 767px
     .letf-right-sec .sec2-inner{
         margin: 0 2rem;
     }
+    .box {
+        margin-bottom: .5rem;
+    }
+    #logoFooter {
+        display: none;
+    }
+    .footer-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+/*
+CSS 280px - 424px
+*/
+@media (max-width: 424px) {
+
+    .brand-logo-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        justify-content: space-around;
+    }
+    .btnBrand {
+        text-align: center;
+    }
+    #brand-linkedin {
+        display: none;
+    }
+    .sec2 {
+        padding: 1.5rem 0 0;
+    }
+    .sec2-inner .text {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+    }
+    .sec2-inner .text h2 {
+        display: none;
+    }
+    .sec2-inner .text a {
+        margin-top: .5rem;
+        padding: 0;
+    }
+    .sec2-inner .img .inDev::before {
+        content: 'New Project';
+        position: absolute;
+        margin-bottom: 15rem;
+    }
+    .sec4-boxes {
+        display: grid;
+        justify-content: space-evenly;
+    }
+    .box .img {
+        opacity: 1;
+    }
+    .box h6 {
+        color: transparent;
+    }
+    footer {
+        padding: 0;
+    }
+    .footer-inner {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .linkSocial {
+        margin-top: 1.5rem;
+    }
+    .column .info {
+        margin-top: 2rem;
+    }
 
 
 
-
-
-
-}}}
+}}}}
