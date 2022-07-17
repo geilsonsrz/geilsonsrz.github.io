@@ -1,7 +1,7 @@
 let canvas;
 
 function iniciar() {
-    var elemento = document.getElementById("canvas");
+    const elemento = document.getElementById("canvas");
     canvas = elemento.getContext("2d");
     window.addEventListener("mousemove", animacion);
 }
