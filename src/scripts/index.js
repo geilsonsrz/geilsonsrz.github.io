@@ -1,7 +1,5 @@
 //===============================================================================
 // Rolagem do SETOR 3 - slick
-
-
 $('.sec3-slider').slick({
   infinite: true,
   slidesToShow: 3,
@@ -43,6 +41,7 @@ AOS.init({
 //===============================================================================
 //ROTAS - Link
 function scrollToIdOnClick(event) {
+  event.preventDefault()
   const element = event.target
   const id = element.getAttribute('href')
   const local = document.querySelector(id).offsetTop
