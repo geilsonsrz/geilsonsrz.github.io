@@ -419,17 +419,17 @@ SETOR 02
 
 .sec2-inner .text {
     width: 50%;
-    margin-left: -4.05em;
+    margin-left: -5em;
     z-index: 9;
 }
 
 .letf-right-sec:nth-child(even) .text {
-    margin-right: -4.05em;
+    margin-right: -4em;
     text-align: right;
 }
 
 .letf-right-sec:nth-child(even) .text-inner {
-    margin: 3.4em 11.875em 0 0;
+    margin: 3.4em 11em 0 0;
 }
 
 .letf-right-sec:nth-child(even) .text-inner::before {
@@ -800,7 +800,7 @@ footer::after {
     }
     .sec1 {
         padding: 3em;
-    }
+    }   
     .sec3 {
         padding: 3em;
     }
@@ -812,7 +812,7 @@ footer::after {
     }
 
 /*
-    CSS MENU - 280px - 1023px
+    CSS MENU - 769px - 1023px
 */
 @media (max-width: 1023px) {
     header {
@@ -968,9 +968,9 @@ footer::after {
     }
 
 /*
-CSS 425px - 767px
+CSS 426px - 700px
 */
-@media (max-width:767px) {
+@media (max-width:700px) {
     h1 {
         font-size: 2rem;
     }
@@ -1038,6 +1038,9 @@ CSS 425px - 767px
     .sec2-inner .text h2 {
         margin-bottom: 12rem;
     }
+    .sec2-inner .text a {
+        margin-left: 5em;
+    }
     .sec2-inner .text-inner p {
         display: none;
     }
@@ -1078,9 +1081,9 @@ CSS 425px - 767px
     }
 
 /*
-CSS 280px - 424px
+CSS 280px - 425px
 */
-@media (max-width: 424px) {
+@media (max-width: 425px) {
 
     .brand-logo-inner {
         display: grid;
@@ -1096,6 +1099,11 @@ CSS 280px - 424px
     }
     .sec2 {
         padding: 1.5rem 0 0;
+    }
+    .sec2-inner {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
     .sec2-inner .text {
         position: relative;
