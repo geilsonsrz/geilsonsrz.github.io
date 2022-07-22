@@ -88,7 +88,7 @@ header {
 }
 
 .logo {
-    max-width: 7rem;
+    width: 7rem;
     border-radius: .5rem;
     background-color: rgba(0, 0, 0, .25);
     transition: all ease 5s;
@@ -697,6 +697,88 @@ footer::after {
 #########################################################################################
 */
 /*
+    CSS - +1920px
+*/
+@media (min-width: 1920px) {
+
+    #minhaLogo {
+        width: 21.5em;
+    }
+    .logo {
+        width: auto;
+        margin-left: 4em;
+        margin-top: 1.5em;
+    }
+    #menu .itemMenu {
+        font-size: 2em;
+    }
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 3.5em;
+    }
+    h3 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 2em;
+    }
+    a.btn {
+        font-size: 2em;
+        font-weight: bold;
+        width: 15em;
+        height: 4em;
+    }
+    .brand-logo-inner div a {
+        font-size: 3em;
+    }
+    img.img-eu {
+        width: 31em;
+    }
+    .text p {
+        margin: 0;
+        padding: 0;
+    }
+    .container-cv {
+        margin-top: 2em;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .container-a {
+        margin: 0;
+        padding: 0;
+    }
+    .cv {
+        font-size: 2em;
+    }
+    .logoProject, .dev {
+        width: 500px;
+    }
+    .dev span {
+        margin-top: 15em;
+    }
+    .inDev {
+        width: 500px;
+        height: 750px;
+    }
+    .sec4 {
+        margin-top: 3em;
+    }
+    .box, h6 {
+        font-size: 2em;
+    }
+    footer {
+        font-size: 2em;
+    }
+    .copyright {
+        font-size: 2em;
+    }
+
+}
+/*
     CSS - 1024 - 1440px
 */
 @media (max-width: 1439px) {
@@ -1049,4 +1131,5 @@ CSS 280px - 424px
     .column .info {
         margin-top: 2rem;
     }
+    
 }}}}
